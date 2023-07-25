@@ -30,7 +30,7 @@ function GameCard(props) {
                 <GameCardButton></GameCardButton>
             </div> */}
 
-            <div className="card" style={{width: '18rem', height: '28rem', margin: '2rem'}}>
+            <div className="card" style={{width: '18rem', height: '35rem', margin: '2rem'}}>
                 <img src={props.game.thumbnail} className="card-img-top" alt="..."/>
                     <div className="card-body">
                         <h5>{props.game.title}</h5>
@@ -39,7 +39,7 @@ function GameCard(props) {
                         </p>
                     </div>
                     <div>
-                        <button className="btn btn-success">Play Game</button>
+                        <a href={props.game.game_url} className="btn btn-success">Play Game</a>
                     </div>
             </div>
         </>
